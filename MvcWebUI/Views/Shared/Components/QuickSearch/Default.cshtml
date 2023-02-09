@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Category>
+
+<ul class="navbar-nav">
+    <li>
+        <a asp-action="Index" asp-controller="Home" asp-area="Reports" class="acategory">All Categories</a>
+    </li>
+    @foreach (var category in Model)
+    {
+        <li>
+            <a asp-action="Index" asp-controller="Home" asp-area="Reports" asp-route-Filter.CategoryId="@category.Id" class="acategory">@category.Name</a>
+        </li>
+    }
+</ul>
+<br />
+<br />
+<form asp-action="Index" asp-controller="Home" asp-area="Reports" method="get">
+    <div class="input-group">
+        <input name="Filter.ProductOrStoreName" class="form-control" placeholder="Enter product or store" />
+        <button type="submit" class="input-group-text btn btn-primary">Search</button>
+    </div>
+</form>

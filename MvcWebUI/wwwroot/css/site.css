@@ -1,0 +1,68 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+
+
+.navusernameblack {
+    padding-top: 8px;
+}
+
+    .navusername span {
+        color: #000000;
+        font-weight: bold;
+    }
+
+.navusernamewhite {
+    padding-top: 8px;
+}
+
+.navusername span {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.pusername {
+    font-weight: bold;
+}
+
+a.adescription {
+    cursor: zoom-in;
+    color: black;
+}
+
+div.divsex {
+    padding-top: 7px;
+}
+
+div.divvirtual {
+    padding-top: 7px;
+}
+
+a.acategory {
+    text-decoration: none;
+    color: #0026ff;
+}
+
+    a.acategory:hover {
+        color: #ff006e;
+    }
+
+a {
+    color: black;
+}
